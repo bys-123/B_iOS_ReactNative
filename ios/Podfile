@@ -1,32 +1,35 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'iosreact725' do
+target 'ReactTestApp' do
+  pod 'AppCenter/Push', '~> 1.9.0'
+  pod 'AppCenter/Crashes', '~> 1.9.0'
+  pod 'AppCenter/Analytics', '~> 1.9.0'
+  pod 'AppCenterReactNativeShared', '~> 1.8.0'
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
 
-  # Pods for iosreact725
-  
-  pod 'AppCenter/Crashes', '~> 1.0.1'
-  pod 'AppCenter/Analytics', '~> 1.0.1'
-  pod 'AppCenter/Push', '~> 1.0.1'
-  pod 'AppCenterReactNativeShared', '~> 1.0.1'
-  end
+  # Pods for ReactTestApp
 
-  target 'iosreact725Tests' do
+  
+
+  platform :ios, '9.0'
+  target 'ReactTestAppTests' do
     inherit! :search_paths
     # Pods for testing
+  end
 
 end
 
-target 'iosreact725-tvOS' do
+target 'ReactTestApp-tvOS' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
 
-  # Pods for iosreact725-tvOS
-end
-  target 'iosreact725-tvOSTests' do
-    inherit! :search_paths
+  # Pods for ReactTestApp-tvOS
 
+  target 'ReactTestApp-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
 
 end
